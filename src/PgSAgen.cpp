@@ -116,11 +116,13 @@ int main(int argc, char *argv[])
     }
         
     string srcFile = "";
-    string srcFile = argv[optind++];
     string pairFile = "";
+    string idxPrefix = "";
+        
+    srcFile = argv[optind++];
     if (optind == argc - 2)
         pairFile = argv[optind++];
-    string idxPrefix(argv[optind++]);
+    idxPrefix = argv[optind++];
     
     if (vFlag) {
         fprintf(stderr, "Veryfication started...\n");
