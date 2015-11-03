@@ -15,17 +15,17 @@ PgSAIndexStandard* prepareIndex(string idxFile, string cacheFile) {
 int main(int argc, char *argv[])
 {
 
-    int opt; // current option
+    int opt = 0; // current option
     int repeat = 11;
     int testKmersNumber = 100000;
     vector<unsigned short> kLengths = {11, 16, 22};
     bool sFlag = false; // scramble reads (for uncorrecly concatenated pair-ended data)
     bool fFlag = false; // filter TTTTTT.....TTTT reads (for compatibility with CGk tests)
     bool pFlag = false; // query by position
-    string cacheFile;
-    string kParam;
-    size_t pos;
-    size_t found;
+    string cacheFile = "";
+    string kParam = "";
+    size_t pos = 0;
+    size_t found = 0;
 
     while ((opt = getopt(argc, argv, "sfpr:n:c:k:?")) != -1) {
         switch (opt) {

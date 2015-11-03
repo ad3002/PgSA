@@ -75,7 +75,7 @@ SuffixArrayBase* generateSA(PseudoGenomeBase* pgb, int rate, int fixed_min_k) {
 int main(int argc, char *argv[])
 {
 
-    int opt; // current option
+    int opt = 0; // current option
     int compressionRate = 1; 
     int fixed_min_k = 1;
     bool pFlag = false;
