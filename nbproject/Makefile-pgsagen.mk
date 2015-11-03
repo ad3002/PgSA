@@ -67,11 +67,11 @@ TESTFILES= \
 	${TESTDIR}/TestFiles/f3
 
 # C Compiler Flags
-CFLAGS=-m64  -g -O0 -static
+CFLAGS=-m64  -g -O0
 
 # CC Compiler Flags
-CCFLAGS=-g -O0 -static
-CXXFLAGS=-g -O0 -static
+CCFLAGS=-g -O0
+CXXFLAGS=-g -O0 
 
 # Fortran Compiler Flags
 FFLAGS=
