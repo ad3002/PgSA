@@ -72,7 +72,7 @@ SuffixArrayBase* generateSA(PseudoGenomeBase* pgb, int rate, int fixed_min_k) {
 };
 
 
-int main(int argc, char *argv[])
+int main(int argc, char** argv)
 {
 
     int opt = 0; // current option
