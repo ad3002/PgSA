@@ -115,7 +115,8 @@ int main(int argc, char *argv[])
         exit(EXIT_FAILURE);
     }
         
-    string srcFile(argv[optind++]);
+    string srcFile = "";
+    string srcFile = argv[optind++];
     string pairFile = "";
     if (optind == argc - 2)
         pairFile = argv[optind++];
