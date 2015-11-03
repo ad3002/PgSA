@@ -18,7 +18,7 @@ namespace PgSAIndex {
         private:
 
             // auxiliary structures
-            uint_reads_cnt dupsTotal;
+            uint_reads_cnt dupsTotal = 0;
 
             PackedReadsSet* packedReadsSet = 0;
             
